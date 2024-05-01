@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebrin2445/Calculator.git"
+  },
+  "author": "sebrina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebrin2445/Calculator/issues"
+  },
+  "homepage": "https://github.com/sebrin2445/Calculator#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
