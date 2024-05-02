@@ -9,23 +9,30 @@ app.get("/",function(req,res){
 app.post("/",function(req,res){
    var num1=Number(req.body.num1);
    var num2=Number(req.body.num2);
-   var sel=req.body.select;
+   var sel=parseInt(req.body.select);
+   var result=num1 + num2;
+
    if(sel===1){
-    var result=num1 + num2;
     res.send("thanks your value is " + result);
 
-   } else if(sel ===2){
-    var result = num1 * num2;
+   } else if(sel===2){
+    result=num1 * num2;
     res.send("thanks your value is " + result);
 
-   } else if(sel === 3){
-    var result = num1 - num2;
+   }
+   else if(sel===3){
+    result=num1 - num2;
+
     res.send("thanks your value is " + result);
 
 
-   } else{
-    var result= num1 / num2;
+   }
+   else {
+    
+    result=num1 / num2;
+
     res.send("thanks your value is " + result);
+
 
    }
    console.log(sel);

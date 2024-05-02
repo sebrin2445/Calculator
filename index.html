@@ -15,6 +15,7 @@
         display: flex;
     }
     form{
+        margin: auto;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -24,7 +25,7 @@
     
     <h1>Calculator</h1>
     <form action="/" method="post">
-        <input type="text" name="num1" id="1st" placeholder="first number">
+        <input required type="text" name="num1" id="1st" placeholder="first number">
         <br>
         <select name="select" id="">
             <option value="1">+</option>
@@ -32,7 +33,7 @@
             <option value="3">-</option>
             <option value="4">/</option>
         </select>
-        <input type="text" name="num2" id="2nd" placeholder="second number">
+        <input required type="text" name="num2" id="2nd" placeholder="second number">
         <button type="submit" name="submit">submit</button>
     
     </form></body>
